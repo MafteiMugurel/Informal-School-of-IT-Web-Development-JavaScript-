@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-flow: row;
+  background-color: #fdfff4;
+  color: #000;
+  margin: 10vh 20vw;
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #edeee7;
+  padding: 2vw 2vw 0 0;
+}
+
+.container-content {
+  padding: 2vw 0 2vw 2vw;
+}
+.container-content h1 {
+  font-size: 2.3em;
+}
+.container-content p {
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.nav-list {
+  text-decoration: none;
+  color: #000;
+  font-size: 28px;
+  margin-top: 1vw;
+}
+.dog-image {
+  background-origin: border-box;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  width: 15vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+td:first-of-type {
+  font-weight: bold;
+  padding-right: 1vw;
+}
+td {
+  padding-bottom: 1vw;
+  font-size: 1.1em;
+}
+.table-decoration tr {
+  padding-bottom: 1vw;
+}
+a:nth-of-type(2) {
+  color: #071eff;
+}
