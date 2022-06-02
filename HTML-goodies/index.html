@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #000000;
+        display: flex;
+        padding: 28vh 32vw;
+        flex-direction: column;
+        color: white;
+        text-transform: uppercase;
+        font-family: sans-serif;
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 65%;
+        font-size: xx-large;
+      }
+
+      header,
+      footer {
+        background-color: #c7bfe6;
+        flex: 1 1 15%;
+
+        border-radius: 7px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+      }
+      aside {
+        background-color: #b5e51d;
+        border-radius: 7px;
+
+        margin-bottom: 10px;
+        float: left;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      content {
+        background-color: #00a3e8;
+        float: right;
+        width: -webkit-fill-available;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        background-color: #ff7f26;
+        flex: 1 1 5%;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <div>
+      <aside>Sidebar</aside>
+      <content>Content</content>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
