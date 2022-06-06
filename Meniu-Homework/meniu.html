@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .menu {
+          display: flex;
+          flex-flow: row;
+          margin: auto 20vw;
+        background-image: linear-gradient(to right, purple, green);
+      }
+      
+      .menu div {
+        border: 1px solid white;
+        color:white;
+        flex: 1 1 25%;
+        text-align-last: center;
+        padding: 2vh 3vw;
+        cursor: pointer;
+      }
+      .menu div.catalog {
+        padding: 2vh 5vw;
+      }
+      .menu div:hover {
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div>Home</div>
+      <div class="catalog">Catalog</div>
+      <div>Cart</div>
+      <div>Profile</div>
+    </div>
+  </body>
+</html>
