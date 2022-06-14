@@ -1,0 +1,86 @@
+:root {
+  --black: #020204;
+  --white: white;
+  --cream: #dfcfb8;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  place-content: center;
+  height: 100%;
+  margin: 0;
+  color: #020204;
+}
+
+.back-content {
+  height: 25vh;
+  width: 70vw;
+  margin-top: -10vh;
+  background-color: var(--cream);
+}
+
+.front-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.front-content .form {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  height: 45vh;
+  width: 20vw;
+  margin-right: -5vw;
+  padding: 2.5vh 3vw;
+  z-index: 2;
+  box-shadow: 5px 5px 20px -10px var(--black);
+  background-color: var(--white);
+}
+
+.front-content .form h1 {
+  padding-bottom: 5vh;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.front-content .form input,
+textarea {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  margin-bottom: 1vh;
+  padding-bottom: 1vw;
+  border-bottom: 2px solid var(--black);
+}
+
+.front-content .form textarea {
+  height: 10vh;
+}
+
+.front-content .form button {
+  width: fit-content;
+  padding: 1vh 2vw;
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: var(--white);
+  font-size: 15px;
+  background-color: var(--black);
+}
+
+.front-content .image {
+  height: 70vh;
+  width: 25vw;
+  margin-bottom: -3vh;
+  background-image: url(image-div.jpg);
+  background-size: cover;
+}
