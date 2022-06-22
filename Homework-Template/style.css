@@ -6,7 +6,6 @@
   --gray: #3a3b3f;
   --green: honeydew;
   --orange: bisque;
-
 }
 body {
   margin: 0 1vw;
@@ -59,7 +58,7 @@ body {
   height: 50vh;
   color: var(--white);
   padding: 3vh 2vw 0 2vw;
-  margin-bottom: 10vh;
+  margin-bottom: 6vh;
 }
 .banner .banner-info {
   background-color: var(--blue);
@@ -87,7 +86,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 2vw;
-  border-bottom: 1px dashed var(--gray);
+  border-bottom: 2px dashed var(--gray);
   padding-bottom: 2vw;
 }
 .cards-wrapper .card {
@@ -118,11 +117,39 @@ body {
   font-weight: bold;
 }
 .card-green {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 .card-orange {
-    background-color:  var(--orange);
+  background-color: var(--orange);
 }
 .card-cream {
-    background-color: var(--cream);
+  background-color: var(--cream);
+}
+.container {
+  display: flex;
+  flex-flow: row;
+  padding: 3vh 0;
+}
+.container-left {
+    border-bottom: 1px dashed var(--gray);
+    display: flex;
+    flex-flow: row;
+}
+.container .container-left .container-image {
+  width: 200px;
+  height: 160px;
+}
+.container-info {
+  display: flex;
+  flex-flow: column;
+  padding: 0 2vw;
+}
+.container-info-title {
+  border-bottom: 1px dashed var(--gray);
+  padding-bottom: 1vh;
+}
+.container-info-button {
+  color: var(--blue);
+  align-self: end;
+  text-decoration: none;
 }
