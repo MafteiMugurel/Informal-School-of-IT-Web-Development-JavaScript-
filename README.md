@@ -16,4 +16,4 @@
 ![Contact-Form](Contact-us-Page-Homework/demo.png)
 
 ## Homework: Grid Template
-![Grid-Template](Homework-Grid-Template/demo.png)
+![Grid-Template](Homework-Template/demo.png)
