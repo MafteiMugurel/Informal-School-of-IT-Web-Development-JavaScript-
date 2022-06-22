@@ -14,3 +14,6 @@
 
 ## HTML+CSS Homework: Contact Form
 ![Contact-Form](Contact-us-Page-Homework/demo.png)
+
+## Homework: Grid Template
+![Grid-Template](Homework-Grid-Template/demo.png)
