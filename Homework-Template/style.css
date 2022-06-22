@@ -1,0 +1,128 @@
+:root {
+  --blue: #2265a9;
+  --white: #f5f5f7;
+  --cream: #e8e8e8;
+  --black: #0f0f0f;
+  --gray: #3a3b3f;
+  --green: honeydew;
+  --orange: bisque;
+
+}
+body {
+  margin: 0 1vw;
+}
+.meniu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.meniu div {
+  background-color: var(--blue);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  padding: 2vh;
+}
+
+.custom-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+.custom-header-title {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.custom-header-title-name {
+  border-right: 1px solid grey;
+  padding-right: 1vw;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.custom-header-title-subtitle {
+  padding-left: 1vw;
+}
+.custom-header-contact {
+  font-size: 0.8rem;
+}
+.banner {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-image: url(header-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: var(--white);
+  padding: 3vh 2vw 0 2vw;
+  margin-bottom: 10vh;
+}
+.banner .banner-info {
+  background-color: var(--blue);
+  width: 30vw;
+  padding: 1vh 1vw;
+}
+.banner .banner-info .banner-info-title {
+  border-bottom: 1px dashed var(--white);
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  font-size: 1.2rem;
+}
+.banner .banner-info .banner-info-text {
+  opacity: 0.7;
+}
+.banner .banner-title {
+  background-color: var(--blue);
+  width: max-content;
+  align-self: end;
+  font-size: 5rem;
+  margin-bottom: -3vh;
+  padding: 1vh 1vw;
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 2vw;
+  border-bottom: 1px dashed var(--gray);
+  padding-bottom: 2vw;
+}
+.cards-wrapper .card {
+  padding: 2vh;
+  display: flex;
+  flex-flow: column;
+}
+.cards-wrapper .card .card-title {
+  margin-bottom: 2vh;
+  padding-bottom: 1vh;
+  border-bottom: 1px dashed var(--gray);
+  font-weight: bold;
+}
+.cards-wrapper .card .card-image {
+  width: 240px;
+  height: 90px;
+  align-self: center;
+  border: 1px solid var(--blue);
+  padding: 5px;
+  background-color: var(--white);
+}
+.cards-wrapper .card .card-text {
+}
+.cards-wrapper .card .card-button {
+  color: var(--blue);
+  align-self: end;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-green {
+    background-color: var(--green);
+}
+.card-orange {
+    background-color:  var(--orange);
+}
+.card-cream {
+    background-color: var(--cream);
+}
