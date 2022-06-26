@@ -1,0 +1,37 @@
+$darkblue_color: #161d2f;
+$blue_color: #161d2f;
+$smokeblue: #596891;
+$white: #f8fbfd;
+
+body {
+  margin: 0;
+  
+}
+
+img {
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: $blue_color;
+  .logo {
+
+  }
+  .menu-items { 
+    display: flex;
+    flex-flow: row;
+
+    svg {
+
+      fill: $smokeblue;
+      width: 30px;
+      padding: 5px;
+    }
+  }
+  .profile {
+
+  }
+}

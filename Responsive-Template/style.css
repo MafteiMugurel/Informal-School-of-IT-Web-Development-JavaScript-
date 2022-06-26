@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: #161d2f;
+}
+.menu .menu-items {
+  display: flex;
+  flex-flow: row;
+}
+.menu .menu-items svg {
+  fill: #596891;
+  width: 30px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
