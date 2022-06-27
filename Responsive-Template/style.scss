@@ -1,11 +1,12 @@
-$darkblue_color: #10141f;
-$blue_color: #161d2f;
+$darkblue: #10141f;
+$blue: #161d2f;
 $smokeblue: #596891;
 $white: #f8fbfd;
 $smokegrey: #80808070;
+$lightgrey: #c4c4c5;
 body {
   margin: 0;
-  background-color: $darkblue_color;
+  background-color: $darkblue;
   font-family: sans-serif;
 }
 
@@ -18,7 +19,7 @@ img {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $blue_color;
+  background-color: $blue;
   padding: 15px 40px;
 
   .logo {
@@ -34,6 +35,10 @@ img {
       fill: $smokeblue;
       width: 46px;
       padding: 30px;
+
+      &:hover {
+        fill: $white;
+      }
     }
   }
 
@@ -63,6 +68,7 @@ img {
     background-color: transparent;
     font-size: 40px;
     color: $white;
+    outline: unset;
   }
 }
 
@@ -71,11 +77,12 @@ h1 {
   margin-left: 40px;
 }
 
-.cards-wrapper {
+.carousel-wrapper {
   display: flex;
   flex-flow: row;
   overflow-y: hidden;
   color: $white;
+  margin-bottom: 40px;
 
   .card {
     position: relative;
@@ -87,7 +94,8 @@ h1 {
 
     .background-image {
       width: 65vw;
-    border-radius: 15px;
+      border-radius: 15px;
+      filter: brightness(0.7);
     }
     .content {
       position: absolute;
@@ -126,12 +134,14 @@ h1 {
             flex-flow: row;
             font-size: 1.5rem;
             align-items: center;
+            color: $lightgrey;
             svg {
-              fill: $white;
+              fill: $lightgrey;
               width: 24px;
             }
           }
           .title {
+            font-weight: bold;
             font-size: 2rem;
             padding-top: 10px;
           }
@@ -141,6 +151,73 @@ h1 {
           background-color: rgb(152 144 144 / 37%);
           padding: 10px 15px;
           border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  overflow-y: hidden;
+  color: $white;
+  margin-right: 20px;
+
+  .card {
+    position: relative;
+    margin-left: 40px;
+    flex: 0 0 45%;
+
+    .background-image {
+      width: 100%;
+      border-radius: 15px;
+      filter: contrast(0.6);
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      .button-save {
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        border: none;
+        padding: 15px;
+        margin: 15px;
+        width: max-content;
+        background-color: rgb(70 68 68 / 75%);
+        fill: $white;
+        align-self: self-end;
+
+        svg {
+          width: 30px;
+        }
+      }
+      .bottom-info {
+        margin: 15px 0 30px 0;
+        .left-info {
+          display: flex;
+          flex-flow: column;
+          .details {
+            display: flex;
+            flex-flow: row;
+            font-size: 1rem;
+            align-items: center;
+            color: $lightgrey;
+            svg {
+              fill: $lightgrey;
+              width: 24px;
+            }
+          }
+          .title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-top: 10px;
+          }
         }
       }
     }
