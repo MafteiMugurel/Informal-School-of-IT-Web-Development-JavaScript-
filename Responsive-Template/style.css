@@ -1,10 +1,11 @@
 body {
   margin: 0;
   background-color: #10141f;
+  font-family: sans-serif;
 }
 
 img {
-  width: 70px;
+  width: 700px;
 }
 
 .menu {
@@ -52,6 +53,81 @@ img {
   background-color: transparent;
   font-size: 40px;
   color: #f8fbfd;
+}
+
+h1 {
+  color: #f8fbfd;
+  margin-left: 40px;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-flow: row;
+  overflow-y: hidden;
+  color: #f8fbfd;
+}
+.cards-wrapper .card {
+  position: relative;
+  margin-left: 40px;
+}
+.cards-wrapper .card:last-of-type {
+  margin-right: 40px;
+}
+.cards-wrapper .card .background-image {
+  width: 65vw;
+  border-radius: 15px;
+}
+.cards-wrapper .card .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.cards-wrapper .card .content .button-save {
+  border-radius: 50%;
+  border: none;
+  padding: 15px;
+  margin: 15px;
+  width: max-content;
+  background-color: rgba(70, 68, 68, 0.75);
+  fill: #f8fbfd;
+  align-self: self-end;
+}
+.cards-wrapper .card .content .button-save svg {
+  width: 30px;
+}
+.cards-wrapper .card .content .bottom-info {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+}
+.cards-wrapper .card .content .bottom-info .left-info {
+  display: flex;
+  flex-flow: column;
+}
+.cards-wrapper .card .content .bottom-info .left-info .details {
+  display: flex;
+  flex-flow: row;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.cards-wrapper .card .content .bottom-info .left-info .details svg {
+  fill: #f8fbfd;
+  width: 24px;
+}
+.cards-wrapper .card .content .bottom-info .left-info .title {
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.cards-wrapper .card .content .bottom-info .right-info {
+  background-color: rgba(152, 144, 144, 0.37);
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
