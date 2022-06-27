@@ -1,16 +1,23 @@
 body {
   margin: 0;
+  background-color: #10141f;
 }
 
 img {
-  width: 30px;
+  width: 70px;
 }
 
 .menu {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   background-color: #161d2f;
+  padding: 15px 40px;
+}
+.menu .logo {
+  width: 70px;
+  height: 70px;
 }
 .menu .menu-items {
   display: flex;
@@ -18,8 +25,33 @@ img {
 }
 .menu .menu-items svg {
   fill: #596891;
-  width: 30px;
-  padding: 5px;
+  width: 46px;
+  padding: 30px;
+}
+.menu .profile {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #f8fbfd;
+  border-radius: 50%;
+}
+
+.search {
+  display: flex;
+  flex-flow: row;
+}
+.search svg {
+  fill: #f8fbfd;
+  width: 46px;
+  height: 46px;
+  padding: 56px 46px 46px 56px;
+  flex: 0 1 auto;
+}
+.search .search-bar {
+  border: none;
+  flex: 1 1 auto;
+  background-color: transparent;
+  font-size: 40px;
+  color: #f8fbfd;
 }
 
 /*# sourceMappingURL=style.css.map */

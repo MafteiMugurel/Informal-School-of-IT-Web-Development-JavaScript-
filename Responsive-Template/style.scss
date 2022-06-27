@@ -1,37 +1,66 @@
-$darkblue_color: #161d2f;
+$darkblue_color: #10141f;
 $blue_color: #161d2f;
 $smokeblue: #596891;
 $white: #f8fbfd;
 
 body {
   margin: 0;
-  
+  background-color: $darkblue_color;
 }
 
 img {
-  width: 30px;
+  width: 70px;
 }
 
 .menu {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   background-color: $blue_color;
-  .logo {
+  padding: 15px 40px;
 
+  .logo {
+    width: 70px;
+    height: 70px;
   }
-  .menu-items { 
+
+  .menu-items {
     display: flex;
     flex-flow: row;
 
     svg {
-
       fill: $smokeblue;
-      width: 30px;
-      padding: 5px;
+      width: 46px;
+      padding: 30px;
     }
   }
-  .profile {
 
+  .profile {
+    width: 70px;
+    height: 70px;
+    border: 4px solid $white;
+    border-radius: 50%;
+  }
+}
+
+.search {
+  display: flex;
+  flex-flow: row;
+
+  svg {
+    fill: $white;
+    width: 46px;
+    height: 46px;
+    padding: 56px 46px 46px 56px;
+    flex: 0 1 auto;
+  }
+
+  .search-bar {
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 40px;
+    color: $white;
   }
 }
