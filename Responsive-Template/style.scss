@@ -4,14 +4,11 @@ $smokeblue: #596891;
 $white: #f8fbfd;
 $smokegrey: #80808070;
 $lightgrey: #c4c4c5;
+
 body {
   margin: 0;
   background-color: $darkblue;
   font-family: sans-serif;
-}
-
-img {
-  width: 700px;
 }
 
 .menu {
@@ -20,11 +17,11 @@ img {
   justify-content: space-between;
   align-items: center;
   background-color: $blue;
-  padding: 15px 40px;
+  padding: 1.5vh 3vw;
 
   .logo {
-    width: 70px;
-    height: 70px;
+
+    width: 6vw;
   }
 
   .menu-items {
@@ -33,8 +30,8 @@ img {
 
     svg {
       fill: $smokeblue;
-      width: 46px;
-      padding: 30px;
+      height: 2.5vh;
+      padding: 0 3vw;
 
       &:hover {
         fill: $white;
@@ -43,9 +40,8 @@ img {
   }
 
   .profile {
-    width: 70px;
-    height: 70px;
-    border: 4px solid $white;
+    width: 6vw;
+    border: 2px solid $white;
     border-radius: 50%;
   }
 }
@@ -53,12 +49,11 @@ img {
 .search {
   display: flex;
   flex-flow: row;
-
+  padding: 2vh 3vw;
   svg {
     fill: $white;
-    width: 46px;
-    height: 46px;
-    padding: 56px 46px 46px 56px;
+    width: 4vw;
+    padding: 0 5vw 0 1vw;
     flex: 0 1 auto;
   }
 
@@ -66,15 +61,16 @@ img {
     border: none;
     flex: 1 1 auto;
     background-color: transparent;
-    font-size: 40px;
+    font-size: 3.5vw;
     color: $white;
     outline: unset;
   }
 }
 
 h1 {
+  font-size: 1.5rem;
   color: $white;
-  margin-left: 40px;
+  margin-left: 3vw;
 }
 
 .carousel-wrapper {
@@ -82,18 +78,19 @@ h1 {
   flex-flow: row;
   overflow-y: hidden;
   color: $white;
-  margin-bottom: 40px;
+  margin-bottom: 2vh;
 
   .card {
     position: relative;
-    margin-left: 40px;
+    margin-left: 3vw;
+    width: 65vw;
 
     &:last-of-type {
-      margin-right: 40px;
+      margin-right: 3vw;
     }
 
     .background-image {
-      width: 65vw;
+      width: -webkit-fill-available;
       border-radius: 15px;
       filter: brightness(0.7);
     }
@@ -101,7 +98,7 @@ h1 {
       position: absolute;
       top: 0;
       width: 100%;
-      height: 100%;
+      height: -webkit-fill-available;
       display: flex;
       flex-flow: column;
       justify-content: space-between;
@@ -109,48 +106,53 @@ h1 {
       .button-save {
         border-radius: 50%;
         border: none;
-        padding: 15px;
-        margin: 15px;
+        padding: 2vw;
+        margin: 2vw;
         width: max-content;
         background-color: rgb(70 68 68 / 75%);
         fill: $white;
         align-self: self-end;
 
         svg {
-          width: 30px;
+          width: 3vw;
         }
       }
+
       .bottom-info {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
-        margin: 30px;
+        margin: 3vw;
         align-items: center;
+
         .left-info {
           display: flex;
           flex-flow: column;
+
           .details {
             display: flex;
             flex-flow: row;
-            font-size: 1.5rem;
+            font-size: 1rem;
             align-items: center;
             color: $lightgrey;
+
             svg {
               fill: $lightgrey;
-              width: 24px;
+              height: 2vh;
             }
           }
+
           .title {
             font-weight: bold;
-            font-size: 2rem;
-            padding-top: 10px;
+            font-size: 1rem;
+            padding-top: 0.4vh;
           }
         }
 
         .right-info {
           background-color: rgb(152 144 144 / 37%);
-          padding: 10px 15px;
-          border-radius: 20px;
+          padding: 0.35vh 1.5vw;
+          border-radius: 15px;
         }
       }
     }
@@ -162,18 +164,22 @@ h1 {
   flex-flow: wrap;
   overflow-y: hidden;
   color: $white;
-  margin-right: 20px;
+  
 
   .card {
     position: relative;
-    margin-left: 40px;
-    flex: 0 0 45%;
+    margin-left: 3vw;
+    flex: 0 0 45.5%;
 
     .background-image {
       width: 100%;
       border-radius: 15px;
       filter: contrast(0.6);
+      &:hover {
+        filter: none;
+      }
     }
+
     .content {
       width: 100%;
       height: 100%;
@@ -186,40 +192,63 @@ h1 {
         top: 0;
         border-radius: 50%;
         border: none;
-        padding: 15px;
-        margin: 15px;
+        padding: 2vw;
+        margin: 2vw;
         width: max-content;
         background-color: rgb(70 68 68 / 75%);
         fill: $white;
         align-self: self-end;
 
         svg {
-          width: 30px;
+          width: 2vw;
         }
       }
+
       .bottom-info {
-        margin: 15px 0 30px 0;
+        margin: 2vh 0 3vh 0;
+
         .left-info {
           display: flex;
           flex-flow: column;
+
           .details {
             display: flex;
             flex-flow: row;
             font-size: 1rem;
             align-items: center;
             color: $lightgrey;
+
             svg {
               fill: $lightgrey;
-              width: 24px;
+              width: 2vh;
             }
           }
+
           .title {
             font-weight: bold;
-            font-size: 1.5rem;
-            padding-top: 10px;
+            font-size: 1rem;
+            padding-top: 1.5vh;
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* For tablets: */
+  .cards-wrapper {
+    .card {
+      flex: 0 0 29.5%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* For desktop: */
+  .cards-wrapper {
+    .card {
+      flex: 0 0 27%;
     }
   }
 }
