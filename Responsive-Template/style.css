@@ -242,8 +242,37 @@ body {
   body .container .search .search-bar {
     font-size: 3vh;
   }
+  body .container .carousel-wrapper .card {
+    width: 30vw;
+  }
+  body .container .carousel-wrapper .card:last-of-type {
+    margin-right: 2vw;
+  }
+  body .container .carousel-wrapper .card .content .button-save {
+    padding: 1.5vh;
+    margin: 1vh;
+  }
+  body .container .carousel-wrapper .card .content .button-save svg {
+    width: 1vw;
+  }
+  body .container .carousel-wrapper .card .content .bottom-info {
+    margin: 2vh;
+  }
+  body .container .carousel-wrapper .card .content .bottom-info .right-info {
+    display: none;
+  }
   body .container .cards-wrapper .card {
-    flex: 0 0 21.5%;
+    flex: 0 0 18.5%;
+  }
+  body .container .cards-wrapper .card .content .button-save {
+    padding: 1.5vh;
+    margin: 1vh;
+  }
+  body .container .cards-wrapper .card .content .button-save svg {
+    width: 1vw;
+  }
+  body .container .cards-wrapper .card .content .bottom-info .left-info .title {
+    padding-top: 1vh;
   }
 }
 

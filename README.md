@@ -17,3 +17,6 @@
 
 ## Homework: Grid Template
 ![Grid-Template](Homework-Template/demo.png)
+
+## Homework: Responsive Template
+![Responsive-Template](Responsive-Template/demo.png)
