@@ -20,7 +20,6 @@ body {
   padding: 1.5vh 3vw;
 
   .logo {
-
     width: 6vw;
   }
 
@@ -45,189 +44,189 @@ body {
     border-radius: 50%;
   }
 }
+.container {
+  .search {
+    display: flex;
+    flex-flow: row;
+    padding: 2vh 3vw;
+    svg {
+      fill: $white;
+      width: 4vw;
+      padding: 0 5vw 0 1vw;
+      flex: 0 1 auto;
+    }
 
-.search {
-  display: flex;
-  flex-flow: row;
-  padding: 2vh 3vw;
-  svg {
-    fill: $white;
-    width: 4vw;
-    padding: 0 5vw 0 1vw;
-    flex: 0 1 auto;
+    .search-bar {
+      border: none;
+      flex: 1 1 auto;
+      background-color: transparent;
+      font-size: 3.5vw;
+      color: $white;
+      outline: unset;
+    }
   }
 
-  .search-bar {
-    border: none;
-    flex: 1 1 auto;
-    background-color: transparent;
-    font-size: 3.5vw;
+  h1 {
+    font-size: 1.5rem;
     color: $white;
-    outline: unset;
-  }
-}
-
-h1 {
-  font-size: 1.5rem;
-  color: $white;
-  margin-left: 3vw;
-}
-
-.carousel-wrapper {
-  display: flex;
-  flex-flow: row;
-  overflow-y: hidden;
-  color: $white;
-  margin-bottom: 2vh;
-
-  .card {
-    position: relative;
     margin-left: 3vw;
-    width: 65vw;
-
-    &:last-of-type {
-      margin-right: 3vw;
-    }
-
-    .background-image {
-      width: -webkit-fill-available;
-      border-radius: 15px;
-      filter: brightness(0.7);
-    }
-    .content {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: -webkit-fill-available;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-between;
-
-      .button-save {
-        border-radius: 50%;
-        border: none;
-        padding: 2vw;
-        margin: 2vw;
-        width: max-content;
-        background-color: rgb(70 68 68 / 75%);
-        fill: $white;
-        align-self: self-end;
-
-        svg {
-          width: 3vw;
-        }
-      }
-
-      .bottom-info {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        margin: 3vw;
-        align-items: center;
-
-        .left-info {
-          display: flex;
-          flex-flow: column;
-
-          .details {
-            display: flex;
-            flex-flow: row;
-            font-size: 1rem;
-            align-items: center;
-            color: $lightgrey;
-
-            svg {
-              fill: $lightgrey;
-              height: 2vh;
-            }
-          }
-
-          .title {
-            font-weight: bold;
-            font-size: 1rem;
-            padding-top: 0.4vh;
-          }
-        }
-
-        .right-info {
-          background-color: rgb(152 144 144 / 37%);
-          padding: 0.35vh 1.5vw;
-          border-radius: 15px;
-        }
-      }
-    }
   }
-}
 
-.cards-wrapper {
-  display: flex;
-  flex-flow: wrap;
-  overflow-y: hidden;
-  color: $white;
-  
+  .carousel-wrapper {
+    display: flex;
+    flex-flow: row;
+    overflow-y: hidden;
+    color: $white;
+    margin-bottom: 2vh;
 
-  .card {
-    position: relative;
-    margin-left: 3vw;
-    flex: 0 0 45.5%;
+    .card {
+      position: relative;
+      margin-left: 3vw;
+      width: 65vw;
 
-    .background-image {
-      width: 100%;
-      border-radius: 15px;
-      filter: contrast(0.6);
-      &:hover {
-        filter: none;
+      &:last-of-type {
+        margin-right: 3vw;
       }
-    }
 
-    .content {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-between;
-
-      .button-save {
+      .background-image {
+        width: -webkit-fill-available;
+        border-radius: 15px;
+        filter: brightness(0.7);
+      }
+      .content {
         position: absolute;
         top: 0;
-        border-radius: 50%;
-        border: none;
-        padding: 2vw;
-        margin: 2vw;
-        width: max-content;
-        background-color: rgb(70 68 68 / 75%);
-        fill: $white;
-        align-self: self-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
 
-        svg {
-          width: 2vw;
+        .button-save {
+          border-radius: 50%;
+          border: none;
+          padding: 2vw;
+          margin: 2vw;
+          width: max-content;
+          background-color: rgb(70 68 68 / 75%);
+          fill: $white;
+          align-self: self-end;
+
+          svg {
+            width: 3vw;
+          }
         }
-      }
 
-      .bottom-info {
-        margin: 2vh 0 3vh 0;
-
-        .left-info {
+        .bottom-info {
           display: flex;
-          flex-flow: column;
+          flex-flow: row;
+          justify-content: space-between;
+          margin: 3vw;
+          align-items: center;
 
-          .details {
+          .left-info {
             display: flex;
-            flex-flow: row;
-            font-size: 1rem;
-            align-items: center;
-            color: $lightgrey;
+            flex-flow: column;
 
-            svg {
-              fill: $lightgrey;
-              width: 2vh;
+            .details {
+              display: flex;
+              flex-flow: row;
+              font-size: 1rem;
+              align-items: center;
+              color: $lightgrey;
+
+              svg {
+                fill: $lightgrey;
+                height: 2vh;
+              }
+            }
+
+            .title {
+              font-weight: bold;
+              font-size: 1rem;
+              padding-top: 0.4vh;
             }
           }
 
-          .title {
-            font-weight: bold;
-            font-size: 1rem;
-            padding-top: 1.5vh;
+          .right-info {
+            background-color: rgb(152 144 144 / 37%);
+            padding: 0.35vh 1.5vw;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    overflow-y: hidden;
+    color: $white;
+
+    .card {
+      position: relative;
+      margin-left: 3vw;
+      flex: 0 0 45.5%;
+
+      .background-image {
+        width: 100%;
+        border-radius: 15px;
+        filter: contrast(0.6);
+        &:hover {
+          filter: none;
+        }
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        .button-save {
+          position: absolute;
+          top: 0;
+          border-radius: 50%;
+          border: none;
+          padding: 2vw;
+          margin: 2vw;
+          width: max-content;
+          background-color: rgb(70 68 68 / 75%);
+          fill: $white;
+          align-self: self-end;
+
+          svg {
+            width: 2vw;
+          }
+        }
+
+        .bottom-info {
+          margin: 2vh 0 3vh 0;
+
+          .left-info {
+            display: flex;
+            flex-flow: column;
+
+            .details {
+              display: flex;
+              flex-flow: row;
+              font-size: 1rem;
+              align-items: center;
+              color: $lightgrey;
+
+              svg {
+                fill: $lightgrey;
+                width: 2vh;
+              }
+            }
+
+            .title {
+              font-weight: bold;
+              font-size: 1rem;
+              padding-top: 1.5vh;
+            }
           }
         }
       }
@@ -237,18 +236,64 @@ h1 {
 
 @media screen and (min-width: 768px) {
   /* For tablets: */
-  .cards-wrapper {
-    .card {
-      flex: 0 0 29.5%;
+  .container {
+    .cards-wrapper {
+      .card {
+        flex: 0 0 29.5%;
+      }
     }
   }
 }
 
 @media screen and (min-width: 992px) {
   /* For desktop: */
-  .cards-wrapper {
-    .card {
-      flex: 0 0 27%;
+  body {
+    display: flex;
+    flex-flow: row;
+    .menu {
+      flex-flow: column;
+      margin: 4vh 0 4vh 2vw;
+      border-radius: 15px;
+      padding: 4vh 2vw;
+      .logo {
+        width: 2.5vw;
+      }
+      .menu-items {
+        flex-flow: column;
+        margin-bottom: auto;
+        margin-top: 5vh;
+        svg {
+          height: 1.5vw;
+          padding: 1vw;
+        }
+      }
+      .profile {
+        width: 2.5vw;
+      }
+    }
+    .container {
+      margin: 3vw 0 0 0;
+
+      .search {
+        padding: 2vh 3vw;
+
+        svg {
+          width: 2vw;
+          padding: 0 2vw 0 0;
+        }
+
+        .search-bar {
+          font-size: 3vh;
+        }
+
+      }
+      
+
+      .cards-wrapper {
+        .card {
+          flex: 0 0 21.5%;
+        }
+      }
     }
   }
 }
