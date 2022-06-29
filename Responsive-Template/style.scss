@@ -4,11 +4,14 @@ $smokeblue: #596891;
 $white: #f8fbfd;
 $smokegrey: #80808070;
 $lightgrey: #c4c4c5;
+$smokegrey-rgba: rgb(70 68 68 / 75%);
+$lightgrey-rgba: rgb(152 144 144 / 37%);
 
 body {
   margin: 0;
   background-color: $darkblue;
   font-family: sans-serif;
+  
 }
 
 .menu {
@@ -23,7 +26,7 @@ body {
     width: 6vw;
   }
 
-  .menu-items {
+  &-items {
     display: flex;
     flex-flow: row;
 
@@ -44,11 +47,13 @@ body {
     border-radius: 50%;
   }
 }
+
 .container {
   .search {
     display: flex;
     flex-flow: row;
     padding: 2vh 3vw;
+
     svg {
       fill: $white;
       width: 4vw;
@@ -56,7 +61,7 @@ body {
       flex: 0 1 auto;
     }
 
-    .search-bar {
+    &-bar {
       border: none;
       flex: 1 1 auto;
       background-color: transparent;
@@ -93,14 +98,15 @@ body {
         border-radius: 15px;
         filter: brightness(0.7);
       }
+
       .content {
         position: absolute;
-        top: 0;
-        width: 100%;
-        height: -webkit-fill-available;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        top: 0;
+        width: 100%;
+        height: -webkit-fill-available;
 
         .button-save {
           border-radius: 50%;
@@ -108,7 +114,7 @@ body {
           padding: 2vw;
           margin: 2vw;
           width: max-content;
-          background-color: rgb(70 68 68 / 75%);
+          background-color: $smokegrey-rgba;
           fill: $white;
           align-self: self-end;
 
@@ -121,8 +127,8 @@ body {
           display: flex;
           flex-flow: row;
           justify-content: space-between;
-          margin: 3vw;
           align-items: center;
+          margin: 3vw;
 
           .left-info {
             display: flex;
@@ -149,7 +155,7 @@ body {
           }
 
           .right-info {
-            background-color: rgb(152 144 144 / 37%);
+            background-color: $lightgrey-rgba;
             padding: 0.35vh 1.5vw;
             border-radius: 15px;
           }
@@ -193,7 +199,7 @@ body {
           padding: 2vw;
           margin: 2vw;
           width: max-content;
-          background-color: rgb(70 68 68 / 75%);
+          background-color: $smokegrey-rgba;
           fill: $white;
           align-self: self-end;
 
@@ -250,39 +256,49 @@ body {
   body {
     display: flex;
     flex-flow: row;
+
     .menu {
       flex-flow: column;
       margin: 4vh 0 4vh 2vw;
       border-radius: 15px;
       padding: 4vh 2vw;
+
       .logo {
         width: 2.5vw;
       }
+
       .menu-items {
         flex-flow: column;
         margin-bottom: auto;
         margin-top: 5vh;
+
         svg {
           height: 1.5vw;
           padding: 1vw;
         }
       }
+
       .profile {
         width: 2.5vw;
       }
     }
+
     .container {
       margin: 3vw 0 0 0;
+
       .search {
         padding: 2vh 3vw;
+
         svg {
           width: 2vw;
           padding: 0 2vw 0 0;
         }
+
         .search-bar {
           font-size: 3vh;
         }
       }
+
       .carousel-wrapper {
         .card {
           width: 30vw;
@@ -290,16 +306,20 @@ body {
           &:last-of-type {
             margin-right: 2vw;
           }
+
           .content {
             .button-save {
               padding: 1.5vh;
               margin: 1vh;
+
               svg {
                 width: 1vw;
               }
             }
+
             .bottom-info {
               margin: 2vh;
+
               .right-info {
                 display: none;
               }
@@ -307,17 +327,21 @@ body {
           }
         }
       }
+
       .cards-wrapper {
         .card {
           flex: 0 0 18.5%;
+
           .content {
             .button-save {
               padding: 1.5vh;
               margin: 1vh;
+
               svg {
                 width: 1vw;
               }
             }
+
             .bottom-info {
               .left-info {
                 .title {

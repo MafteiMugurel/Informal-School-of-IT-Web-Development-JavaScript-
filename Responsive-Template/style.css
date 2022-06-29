@@ -15,16 +15,16 @@ body {
 .menu .logo {
   width: 6vw;
 }
-.menu .menu-items {
+.menu-items {
   display: flex;
   flex-flow: row;
 }
-.menu .menu-items svg {
+.menu-items svg {
   fill: #596891;
   height: 2.5vh;
   padding: 0 3vw;
 }
-.menu .menu-items svg:hover {
+.menu-items svg:hover {
   fill: #f8fbfd;
 }
 .menu .profile {
@@ -44,7 +44,7 @@ body {
   padding: 0 5vw 0 1vw;
   flex: 0 1 auto;
 }
-.container .search .search-bar {
+.container .search-bar {
   border: none;
   flex: 1 1 auto;
   background-color: transparent;
@@ -79,12 +79,12 @@ body {
 }
 .container .carousel-wrapper .card .content {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: -webkit-fill-available;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: -webkit-fill-available;
 }
 .container .carousel-wrapper .card .content .button-save {
   border-radius: 50%;
@@ -103,8 +103,8 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin: 3vw;
   align-items: center;
+  margin: 3vw;
 }
 .container .carousel-wrapper .card .content .bottom-info .left-info {
   display: flex;
