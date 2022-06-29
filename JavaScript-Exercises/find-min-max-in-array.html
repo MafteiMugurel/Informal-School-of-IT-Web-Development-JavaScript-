@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      var numbersArray = [11, 4, 9, 100, 88, 0, 1001, 77];
+
+      let min = numbersArray[0];
+      let max = numbersArray[0];
+      let sum = 0;
+
+      numbersArray.forEach((item) => {
+        min > item ? (min = item) : null;
+        max < item ? (max = item) : null;
+        sum = sum + item;
+      });
+
+      console.log(min, max);
+      console.log(sum);
+    </script>
+  </body>
+</html>
