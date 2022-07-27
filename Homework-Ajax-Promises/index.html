@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url(./bg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+      }
+      .image {
+        height: 40vh;
+        width: auto;
+        border-radius: 50%;
+      }
+      .jokes {
+        margin: 2vh 0;
+        width: 70vw;
+        color: black;
+        font-size: 2rem;
+        text-shadow: 2px 2px orange;
+        text-align: center;
+      }
+      .button {
+        background-image: url(./brick.png);
+        width: fit-content;
+        padding: 3vh 2vw;
+        border-radius: 3px;
+        border: 3px solid brown;
+        cursor: pointer;
+        color: black;
+        font-size: 1rem;
+        text-shadow: 1px 1px orange;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="image"
+      src="https://pngimg.com/uploads/chuck_norris/chuck_norris_PNG31.png"
+      alt="image"
+    />
+    <div class="jokes" id="jokes"></div>
+    <button class="button" onclick="getJoke()">Get me a joke</button>
+
+    <script>
+      function getJoke() {
+        fetch("https://api.chucknorris.io/jokes/random")
+          .then((result1) => result1.json())
+          .then((result2) => {
+            var tellMeAjoke = document.getElementById("jokes");
+            tellMeAjoke.innerText = result2.value;
+          });
+      }
+    </script>
+  </body>
+</html>
