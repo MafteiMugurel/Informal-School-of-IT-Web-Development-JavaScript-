@@ -1,0 +1,36 @@
+body {
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
+  .image {
+    height: 40vh;
+    width: auto;
+    border-radius: 50%;
+  }
+  .jokes {
+    margin: 2vh 0;
+    width: 70vw;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 2px 2px orange;
+    text-align: center;
+  }
+  .button {
+    background-image: url(./brick.png);
+    width: fit-content;
+    padding: 3vh 2vw;
+    border-radius: 3px;
+    border: 3px solid brown;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    text-shadow: 1px 1px orange;
+    font-weight: bold;
+  }

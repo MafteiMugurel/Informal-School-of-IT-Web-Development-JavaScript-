@@ -20,3 +20,9 @@
 
 ## Homework: Responsive Template
 ![Responsive-Template](Responsive-Template/demo.png)
+
+## Homework: Rock-Paper-Scissors-Game
+![Rock-Paper-Scissors-Game](Rock-Paper-Scissors-Game/demo.png)
+
+## Homework: Homework-Ajax-Promises
+![Homework-Ajax-Promises](Homework-Ajax-Promises/demo.png)

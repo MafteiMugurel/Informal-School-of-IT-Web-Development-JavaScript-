@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body>
+    <header>Rock, Paper, Scissors</header>
+
+    <div id="page1" class="page" style="display: flex">
+      <button onclick="show();" class="button-page1">Play Game</button>
+    </div>
+
+    <div id="page2" class="page" style="display: none">
+      <table class="table-score">
+        <tr>
+          <td>Computer choose</td>
+          <td id="computerChoose"></td>
+        </tr>
+        <tr>
+          <td>Computer Score</td>
+          <td id="computerScore"></td>
+        </tr>
+        <tr>
+          <td>User choose</td>
+          <td id="userChoose"></td>
+        </tr>
+        <tr>
+          <td>User Score</td>
+          <td id="userScore"></td>
+        </tr>
+        <tr>
+          <td>Winner</td>
+          <td id="winner"></td>
+        </tr>
+      </table>
+
+      <div class="image-select">
+        <img src="rock.png" onclick="select('rock');" />
+        <img src="paper.png" onclick="select('paper');" />
+        <img src="scissors.png" onclick="select('scissors');" />
+      </div>
+
+      <button onclick="play()" class="button-page2">Play</button>
+    </div>
+  </body>
+</html>

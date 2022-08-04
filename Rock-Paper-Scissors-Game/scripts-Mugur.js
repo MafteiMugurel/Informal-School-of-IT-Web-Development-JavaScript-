@@ -3,12 +3,14 @@ var userOption;
 var rounds = 0;
 var compluterScore = 0;
 var userScore = 0;
+
 function play() {
   let computerOption = options[Math.floor(Math.random(options) * 3)];
   rounds = rounds + 1;
 
   var computerOptionElement = document.getElementById("computerChoose");
   computerOptionElement.innerText = computerOption;
+
   if (computerOption === userOption) {
     var roundResult = document.getElementById("winner");
     roundResult.innerText = "Tie";
@@ -45,23 +47,19 @@ function play() {
       }
     }
   }
+
   var userWins = document.getElementById("userScore");
   userWins.innerText = userScore;
+
   var computerWins = document.getElementById("computerScore");
   computerWins.innerText = compluterScore;
 }
 
-function show(elementID) {
-  var ele = document.getElementById(elementID);
-  if (!ele) {
-    alert("No Such Page Found.");
-    return;
-  }
-  var pages = document.getElementsByClassName("page");
-  for (var i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-  }
-  ele.style.display = "block";
+function show() {
+  var page1 = document.getElementById("page1");
+  var page2 = document.getElementById("page2");
+  page1.style.display = "none";
+  page2.style.display = "flex";
 }
 
 function select(option) {
